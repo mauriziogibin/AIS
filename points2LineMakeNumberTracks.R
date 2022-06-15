@@ -93,7 +93,7 @@ moreThan <- function(dt,thR){
 }
 cutStr=3600
 # clipping the points to the extent
-makeTracks <- function(lrit09f,curStr) {
+makeTracks <- function(lrit09f,cutStr) {
   # we will have to identify the tracks
   lrit09fT <- as.ltraj(xy = lrit09f[, c("lon", "lat")],
                        date = lrit09f$datetime,
